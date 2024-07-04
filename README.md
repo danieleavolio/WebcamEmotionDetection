@@ -9,6 +9,12 @@ This project is designed to detect and analyze emotions from video streams in re
 - Trend analysis of dominant emotions over time.
 - Lightweight and efficient, suitable for running on various hardware platforms.
 
+## Example
+
+![Emotion Detection Example](https://i.imgur.com/d7pB26V.jpeg)
+
+![Graph Example](emotion_trend.png)
+
 ## Installation
 
 To set up the project environment, follow these steps:
