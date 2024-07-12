@@ -94,9 +94,10 @@ def main(video_analysis):
         try:
             analysis = emotion_detector.detect_emotions(frame)
             if analysis:
-                box = analysis[0]['box']
-                emotions = analysis[0]['emotions']
-                draw_emotion_info(frame, emotions, box, COLORS)
+                for a in analysis:
+                    box = a['box']
+                    emotions = a['emotions']
+                    draw_emotion_info(frame, emotions, box, COLORS)
 
                 current_time = time.time()
                 if video_analysis and current_time >= next_capture_time:
